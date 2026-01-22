@@ -82,7 +82,7 @@ export default function Home() {
           </p>
 
           <p className="font-semibold">
-            So build. Build frighteningly ambitious things.
+            So let's build frighteningly ambitious things.
           </p>
 
           <p className="opacity-60 mt-8">
