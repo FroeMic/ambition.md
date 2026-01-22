@@ -54,7 +54,7 @@ export default function Home() {
           </p>
 
           <p>
-            So choose carefully. Hunt actively. Try problems, discard them, try more.
+            So choose carefully. Explore actively. Try problems, discard them, try more.
           </p>
 
           <p>
