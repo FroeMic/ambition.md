@@ -98,11 +98,7 @@ export default function TheFuture() {
           </p>
 
           <p>
-            Build agents in the era of agents. Orchestration. Cognition. Memory. These are inherently interesting problems. Do you want to build SaaS for the rest of your life?
-          </p>
-
-          <p>
-            <em>Or do you want to come with me and change the world?</em>
+            Build agents in the era of agents. Orchestration. Cognition. Memory. These are inherently interesting problems. Do you want to build SaaS for the rest of your life? <em>Or do you want to come with me and change the world?</em>
           </p>
 
           <p>
@@ -136,7 +132,7 @@ export default function TheFuture() {
           </p>
 
           <p>
-            <em>Let&apos;s not go on holiday. Let&apos;s go on an adventure. Together.</em>
+            <em>Let&apos;s not go on holiday. Let&apos;s go on an adventure.</em>
           </p>
 
           <hr className="my-8 border-t border-current opacity-20" />
