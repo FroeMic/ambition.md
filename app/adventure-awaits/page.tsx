@@ -1,5 +1,14 @@
-export default function TheFuture() {
+'use client';
+import { useState } from 'react';
+import SplashCursor from './components/SplashCursor';
+import PartyBuilder from './components/PartyBuilder';
+
+export default function AdventureAwaits() {
+  const [splashActive, setSplashActive] = useState(false);
+
   return (
+    <>
+      {splashActive && <SplashCursor />}
     <main className="min-h-screen px-6 pt-12 pb-0 md:px-12 md:pt-20 md:pb-0">
       <article className="max-w-2xl mx-auto">
         <header className="mb-12">
@@ -10,8 +19,14 @@ export default function TheFuture() {
 
         <div className="space-y-6 text-base leading-relaxed">
 
+          {/* --- 1. WHY — THE BELIEF --- */}
+
           <p>
-            OpenClaw: 200K stars in 3 months. People love it because it gives them their own agent. Proactive. Connecting tools and communication. The ability to automate. To program with words.
+            In the future, every company will have AI employees — autonomous, always on, working next to humans. Not just tools. Colleagues.
+          </p>
+
+          <p>
+            OpenClaw proved that people want this. 200K stars in 3 months. People love it because it gives them their own agent. Proactive. Connecting tools and communication. The ability to automate. To program with words.
           </p>
 
           <p>
@@ -19,22 +34,36 @@ export default function TheFuture() {
           </p>
 
           <p>
-            I have no doubt companies want this magic in the hands of their employees. But there&apos;s the gap: No setup without a techie. No identity layer. No permissions. API keys in plaintext.
+            But it&apos;s built for individuals, not companies. No identity layer. No permissions. No security.
           </p>
 
           <p>
-            <strong>We can build this.</strong> Secure agents for teams. Virtual employees with OpenClaw&apos;s power — but with security, governance, and multi-tenancy built in.
-          </p>
-
-          <p>
-            We give every employee the ability to program their agent in natural language. We give them magic.
-          </p>
-
-          <p>
-            In the future, every company will have AI employees — autonomous, always on, working next to humans. Not just tools. Colleagues. And we can build this future.
+            We can build this. Give every employee an agent they program with words. Give them magic.
           </p>
 
           <hr className="my-8 border-t border-current opacity-20" />
+
+          {/* --- 2. THE TEAM --- */}
+
+          <p>
+            For the first time in a long time, I&apos;ve seen a glimpse of the future — and I know how we get there. I want to build and lead this company. And I want to <em>build it with friends</em>. People I&apos;d hang with even when not working. You&apos;re reading this because I count you among them.
+          </p>
+
+          <p>
+            <strong>Felix:</strong> You once told me your perfect startup would embrace the quirky design taste you so clearly have. Well, here we are. Not quite physical robots — but one step removed. I don&apos;t want a future with soulless agents. I want agents as unique and quirky as Star Wars droids. Witty. Opinionated. Unique. We need your creativity and edginess to stand out. Our brand should be as distinctive as our product. &quot;Trace anatomy.&quot; Fucking amazing. Build a global PLG motion from scratch. And yes, our brand color can be <span className="px-1.5 py-0.5 rounded" style={{ backgroundColor: '#ed702e', color: '#ffffff' }}>orange</span>.
+          </p>
+
+          <p>
+            <strong>Nimar:</strong> Last summer I asked whether I should join LF. Your own words were that the only reason you could think of not to was that I&apos;d be &quot;just working on a SaaS app and not on AI.&quot; Now is the era of agents. Orchestration. Cognition. Memory. These are inherently interesting problems. Do you want to build SaaS for the rest of your life? <em>Or do you want to come with me and change the world?</em>
+          </p>
+
+          <p>
+            This is no small ask. Four years between PMF and the ideation maze — I know that was painful. But here is an opportunity to catapult past those stages. Fast. Very fast.
+          </p>
+
+          <hr className="my-8 border-t border-current opacity-20" />
+
+          {/* --- 3. WHY NOW --- */}
 
           <p className="font-semibold">
             Why Now
@@ -45,13 +74,23 @@ export default function TheFuture() {
           </p>
 
           <p>
-            <strong>Let&apos;s put an agent on every desk and in every company.</strong>
+            I have no doubt companies want this magic in the hands of their employees. But there&apos;s the gap: OpenClaw is built for individuals, not companies.
+          </p>
+
+          <p>
+            <strong>We can build this.</strong> Secure agents for teams. Virtual employees with OpenClaw&apos;s power — but with security, governance, and multi-tenancy built in.
+          </p>
+
+          <p>
+            <em>Let&apos;s put an agent on every desk and in every company.</em>
           </p>
 
           <hr className="my-8 border-t border-current opacity-20" />
 
+          {/* --- 4. HOW WE WIN --- */}
+
           <p className="font-semibold">
-            Why This Is Worth Pursuing
+            Why This Fits Us
           </p>
 
           <ul className="list-disc pl-6 space-y-3">
@@ -68,7 +107,7 @@ export default function TheFuture() {
               <strong>Excited customers.</strong> We sell to teams that are thrilled about AI and the future — not dragging legacy industries into adoption.
             </li>
             <li>
-              <strong>Self-improving.</strong> Our own agents will help us scale.
+              <strong>Self-improving.</strong> Our own agents will help us scale. We&apos;ll be proud of our product.
             </li>
             <li>
               <strong>Generational upside.</strong> If we build this right, our past achievements will look small by comparison.
@@ -81,64 +120,10 @@ export default function TheFuture() {
 
           <hr className="my-8 border-t border-current opacity-20" />
 
-          <p className="font-semibold">
-            Why You
-          </p>
-
-          <p>
-            The team to win this needs: product taste, speed to ship, and GTM execution. I think we can build a dream team.
-          </p>
-
-          <p>
-            <strong>Michael:</strong> One deep realization: I draw energy from building and running an organization, not from coding. I want to lead this company. I want to be its face. For the first time in a long time, I&apos;ve seen a glimpse of the future — and I know how we get there.
-          </p>
-
-          <p>
-            <strong>Nimar:</strong> You told me the thing speaking against joining LF was that you&apos;d &quot;just be working on a SaaS app.&quot; Don&apos;t listen to me. Listen to your own advice.
-          </p>
-
-          <p>
-            Build agents in the era of agents. Orchestration. Cognition. Memory. These are inherently interesting problems. Do you want to build SaaS for the rest of your life? <em>Or do you want to come with me and change the world?</em>
-          </p>
-
-          <p>
-            <strong>Felix:</strong> You said your perfect startup would embrace the quirky design taste you so clearly have. Well, here we are.
-          </p>
-
-          <p>
-            Not quite physical robots — but one step removed. I don&apos;t want a future with soulless agents. I want agents as unique and quirky as Star Wars droids. Witty. Opinionated. Unique.
-          </p>
-
-          <p>
-            &quot;Trace anatomy.&quot; Fucking amazing. I need your creativity and edginess to stand out. Our brand should be as distinctive as our product. Build a global PLG motion from scratch. And yes, our brand color can be <span className="px-1.5 py-0.5 rounded" style={{ backgroundColor: '#ed702e', color: '#ffffff' }}>orange</span>.
-          </p>
-
-          <hr className="my-8 border-t border-current opacity-20" />
+          {/* --- 5. THE FINE PRINT --- */}
 
           <p className="font-semibold">
-            Why Us
-          </p>
-
-          <p>
-            Together, you spent two years searching for PMF. Then two years in the ideation maze. I get it — that&apos;s a painful place.
-          </p>
-
-          <p>
-            Here I stand with an opportunity to catapult us past those stages. Fast. Very fast. And we build it together.
-          </p>
-
-          <p>
-            We&apos;ve taken scars from our first startups. The pendulum has swung. Our lessons push us to overcorrect. We should listen — but not too much.
-          </p>
-
-          <p>
-            <em>Let&apos;s not go on holiday. Let&apos;s go on an adventure.</em>
-          </p>
-
-          <hr className="my-8 border-t border-current opacity-20" />
-
-          <p className="font-semibold">
-            Hard Facts (to discuss)
+            How It Could Work
           </p>
 
           <ul className="list-disc pl-6 space-y-3">
@@ -162,36 +147,12 @@ export default function TheFuture() {
             </li>
           </ul>
 
-          <hr className="my-8 border-t border-current opacity-20" />
-
-          <p className="font-semibold">
-            Fundraising
-          </p>
-
           <p>
-            This requires speed. Pre-seed from day one to pay an exceptional team.
-          </p>
-
-          <p>
-            But I want a company where founders control the ship — not investors. Don&apos;t optimize on valuation. Optimize on deal terms. We control our destiny.
+            This requires speed. Pre-seed from day one to pay an exceptional team. But we should build a company where founders control the ship — not investors. Don&apos;t optimize on valuation. Optimize on deal terms. We control our destiny.
           </p>
 
           <p>
             <strong>Ideal path:</strong> YC to dictate terms and multiply launch visibility. Then grow revenue fast enough that follow-on is optional.
-          </p>
-
-          <hr className="my-8 border-t border-current opacity-20" />
-
-          <p className="font-semibold">
-            Culture
-          </p>
-
-          <p>
-            Most importantly: I want to <em>found with friends</em>. People I&apos;d hang with even when not working.
-          </p>
-
-          <p>
-            You&apos;re reading this because I count you among them.
           </p>
 
           <p>
@@ -204,8 +165,10 @@ export default function TheFuture() {
 
           <hr className="my-8 border-t border-current opacity-20" />
 
+          {/* --- 6. WHAT IF WE LOSE --- */}
+
           <p className="font-semibold">
-            The Bear Case
+            What If We Lose
           </p>
 
           <p>
@@ -223,26 +186,14 @@ export default function TheFuture() {
           <hr className="my-8 border-t border-current opacity-20" />
 
           <p className="font-semibold text-lg">
-            Adventure awaits.
+            Adventure awaits. ... Do you accept this quest?
           </p>
 
-          <p className="font-semibold text-lg">
-            ...
-          </p>
-
-          <p className="font-semibold text-lg">
-            Do you accept this quest?
-          </p>
-
-          <img
-            src="/avatars.png"
-            alt="Pixelated avatars of the founding team"
-            className="mt-10 w-48"
-            style={{ marginBottom: '-20px' }}
-          />
+          <PartyBuilder onPartyChange={(count) => setSplashActive(count >= 2)} />
 
         </div>
       </article>
     </main>
+    </>
   );
 }
